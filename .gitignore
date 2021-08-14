@@ -2,13 +2,7 @@
 *.log
 *.diff
 *.err
-*.orig
-*.rej
-*.swo
-*.swp
-*.vi
 *.zip
-*~
 
 # OS or Editor folders
 ._*
