@@ -22,26 +22,3 @@
 nbproject
 Thumbs.db
 /.vscode/
-
-# Optional REPL history
-.node_repl_history
-
-# Folders to ignore
-# /js/coverage/
-/node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-# lerna-debug.log*
-
-# Dependency directories
-node_modules/
-
-# Optional npm cache directory
-#.npm
-
-# Optional eslint cache
-# .eslintcache
-
-# Yarn Integrity file
-.yarn-integrity
