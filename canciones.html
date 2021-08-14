@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es" class="h-100">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>OYE RADIO OYE :: Canciones</title>
+        <meta name="author" content="Gustavo Cruz">
+        <meta name="description" content="Página con todas las Canciones disponibles en nuestra Web OYE">
+        <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">-->
+        <link rel="stylesheet" type="text/css" href="./bootstrap/bootstrap-4.5.2/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/estilos.css">
+        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+        <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    </head>
+    <body class="h-100 d-flex flex-column" id="pcanciones" data-datos='{ "top3": "n", "pagina": "canciones" }'>
+        <header>
+            <h1 class="d-none">Radio OYE, la radio online para los amantes de la música</h1>
+            <nav class="navbar navbar-expand-md navbar-light fixed-top text-dark justify-content-between justify-content-md-center align-items-center bg-white">
+            <a class="navbar-brand" aria-label="Logo OYE" href="index.html"><img src="./imgs/logo.png" class="d-inline-block mr-2" alt="Logo Radio OYE" width="56" height="54"><span class="logo">OYE</span></a>
+<!--                <h1><a class="navbar-brand text-primary" href="index.html"><img src="./imgs/logo.png" width="56" class="d-inline-block" alt="Logo Radio OYE"> OYE</a></h1> -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barra" aria-controls="barra" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="barra">
+                    <ul class="navbar-nav justify-content-md-center my-auto mx-auto">
+                        <li class="nav-item"><a class="nav-link textshadow" href="./index.html">Inicio</a></li>
+                        <li class="nav-item active"><a class="nav-link textshadow" href="./canciones.html">Canciones <span class="sr-only">(actual)</span></a></li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item mb-1 mb-md-0 mr-1"><a class="btn btn-primary btn-contacto" id="btnContacto" href="#" role="button">Contacto</a></li>
+                        <li class="nav-item mb-1 mb-md-0 mr-1 d-md-none d-lg-block"><a class="btn btn-primary btn-barra" href="./login.html" role="link">Inicio de Sesión</a></li>
+                        <li class="nav-item mb-1 mb-md-0 d-md-none d-lg-block"><a class="btn btn-primary btn-barra" href="./registro.html" role="link">Registro</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main role="main" class="py-4 bg-light flex-grow-1" id="main">
+            <div class="container mt-5 pt-5 pb-1">
+                <div class="row">
+                    <div class="col col-md m-auto">
+                        <h2 class="font-weight-bold">Canciones <span class="badge badge-secondary" id="nCanciones"></span></h2>
+                        <label class="sr-only" for="inputCancion">Nombre o título de la canción a buscar</label>
+                        <input class="quicksearch form-control my-3" type="text" id="inputCancion" name="inputCancion" placeholder="Buscar" value="">
+                    </div>
+                </div>
+            </div>
+            <!-- canciones - isotope -->
+            <div class="container">
+                <div class="grid" id="canciones"></div>
+            </div>
+            <!-- canciones - isotope  -->
+        </main>
+        <footer class="container-fluid bg-primary">
+            <div class="row pie-pagina">
+                <div class="col col-md-6 p-2 px-3 d-none d-md-block">Comparte la música</div>
+                <div class="col col-md-6 p-2 px-3 text-md-right text-center">© Derechos Reservados</div>
+            </div>
+        </footer>
+<!--         <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script> -->
+        <script src="./js/jquery-3.5.1.min.js"></script>
+        <script src="./bootstrap/bootstrap-4.5.2-dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./js/isotope.pkgd.js"></script>
+        <a id="back2Top" title="Ir a Inicio" href="#" role="button">➤</a>
+        <script src="./js/script.js"></script>
+    </body>
+</html>

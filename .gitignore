@@ -1,14 +1,5 @@
 # Logs
 *.log
-*.js
-canciones
-js
-src
-imgs
-css
-*.html
-datosss.json
-
 *.diff
 *.err
 *.orig
@@ -54,5 +45,3 @@ node_modules/
 
 # Yarn Integrity file
 .yarn-integrity
-.nore
-gtignor.txt
